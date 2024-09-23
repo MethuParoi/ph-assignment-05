@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white text-black">
+    <section class="bg-gray-200">
+            <nav class="flex itmes-center justify-between py-5 sm:py-8  px-5 md:px-0 pt-[10px] md:pt-[20px] md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] ">
+                <div class="pt-3 sm:pt-0">
+                    <a href="./index.html">
+                        <button class="text-lg lg:text-xl font-semibold w-14 sm:w-16 lg:w-24 h-8 sm:h-10 bg-lime-300 rounded-lg hover:bg-lime-400">
+                            Home
+                        </button>
+                    </a>
+                </div>
+
+                <div class="flex flex-col sm:flex-row itmes-center gap-x-5">
+                    <div class="mx-auto sm:mx-0">
+                        <img class="w-[2rem] h-[2rem] sm:w-[2.5rem] sm:h-[2.5rem] lg:w-[3rem] lg:h-[3rem]"  src="./assets/logo.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-lg sm:text-xl lg:text-2xl font-semibold pt-2 ">Donate Bangladesh</h2>
+                    </div>
+                </div>
+            
+
+                <div class="flex itmes-center lg:gap-x-5 gap-x-2 pt-3 sm:pt-0">
+                    <img class="hidden sm:block w-[2rem] h-[2rem] sm:w-[2.5rem] sm:h-[2.5rem] lg:w-[3rem] lg:h-[3rem]" src="./assets/coin.png" alt="">
+                    <div class="flex gap-x-2 sm:pt-2">
+                        <h2 class="text-lg lg:text-xl text-gray-600 font-medium" id="balance">00</h2>
+                        <h2 class="text-lg lg:text-xl text-gray-600 font-medium"> BDT</h2>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="py-5 sm:py-8  px-5 md:px-0 pt-[20px] md:pt-[40px] md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] ">
+            <div>
+                <h2 class="text-xl sm
+                :text-2xl lg:text-3xl font-semibold">Important FAQ ??</h2>
+            </div>
+
+            <!-- accordian -->
+            <div class="mt-8">
+                <div class="collapse collapse-arrow bg-gray-100 border-2 border-gray-300 mb-2">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p class="text-gray-600 text-lg w-[100%] ">The Document Object Model (DOM) is a programming interface for web documents, representing the structure of a webpage as a tree of objects. It allows developers to access, modify, and manipulate HTML and XML content dynamically using scripting languages like JavaScript, enabling interactive and responsive web pages.</p>
+                </div>
+                </div>
+                <div class="collapse collapse-arrow bg-gray-100 border-2 border-gray-300 mb-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p class="text-gray-600 text-lg w-[100%]">To select an element from the DOM, you can use methods like `document.getElementById('id')` for selecting by ID, `document.querySelector('.class')` for selecting by class or tag, or `document.querySelectorAll('selector')` to select multiple elements matching a CSS selector.</p>
+                </div>
+                </div>
+                <div class="collapse collapse-arrow bg-gray-100 border-2 border-gray-300 mb-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it useful?</div>
+                <div class="collapse-content">
+                    <p class="text-gray-600 text-lg w-[100%]">Event delegation is a technique in the DOM where a single event listener is added to a parent element to manage events from its child elements. It's useful because it improves performance by reducing the number of event listeners and works dynamically for elements added later.</p>
+                </div>
+                </div>
+                <div class="collapse collapse-arrow bg-gray-100 border-2 border-gray-300 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                        <div class="collapse-content">
+                            <p class="text-gray-600 text-lg w-[100%]">You can manipulate an element's attributes using `setAttribute()`, `getAttribute()`, or directly via properties like `element.id`. For styles, use `element.style` to modify inline styles (e.g., `element.style.backgroundColor = 'red'`) or modify classes using `classList.add()`, `classList.remove()`, or `classList.toggle()`.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- footer section -->
+         <div id="footer-section" class="w-full bg-gray-200 mt-[5rem] pb-[2rem]">
+            <!-- container mx-auto -->
+            <div class="mx-5 md:mx-0 pt-[1rem] md:pt-[2rem] md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center">
+                <div class="flex items-center gap-x-5 mt-[1rem] mb-[1rem]">
+                    <img class="w-[3rem] md:w-[4rem]" src="./assets/logo.png" alt="">
+                    <h1 class="text-[1.5rem] md:text-[2rem] font-bold">Donate Bangladesh</h1>
+                </div>
+                <div class="flex justify-center mt-[1rem] mb-[3rem]">
+                    <p class="text-gray-600 text-lg mt-[1rem] text-center w-[85%] sm:w-[70%] line-clamp-8">
+                        Donate Bangladesh is a non-profit organization that aims to provide support and assistance to those in need. We work to address various social issues and provide relief to individuals and communities affected by disasters, poverty, and other challenges. Our mission is to make a positive impact on the lives of others and create a better world for all. Your donations help us continue our work and reach more people in need. Thank you for your support!
+                    </p>
+                </div>
+                <button class="flex justify-center items-center w-[85%] sm:w-[15rem] h-[3.5rem] rounded-[3rem] bg-lime-400 hover:bg-lime-500">
+                    <p class="text-[1.5rem] text-gray-800 font-semibold">Donate Now</p>
+                </button>
+            </div>
+        </div>
+
+    <!-- connecting js file with webpage -->
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

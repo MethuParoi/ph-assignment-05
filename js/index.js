@@ -1,6 +1,7 @@
 // Donation and history functionalities
 let balance = 10000;
 document.getElementById("balance").innerHTML = balance;
+
 //variables for donation amount
 let noakhaliDonationAmount = 0;
 let feniDonationAmount = 0;
@@ -58,6 +59,17 @@ donateNowButtons.forEach(({ id, inputId }) => {
       alert(`Donated ${donationAmount} taka`);
     }
   });
+});
+
+//blur functonality
+const blurSection = document.getElementById("section-blur");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100) {
+    blurSection.classList.add("backdrop-blur-md");
+  } else {
+    blurSection.classList.remove("backdrop-blur-md");
+  }
 });
 
 // Donation and history functionalities

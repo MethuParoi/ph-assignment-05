@@ -9,44 +9,49 @@
 </head>
 <body >
     <!-- navbar -->
-    <section class="bg-gray-200">
-         <nav class="flex itmes-center justify-between py-5 sm:py-8  px-5 md:px-0 pt-[10px] md:pt-[20px] md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] ">
-            <div class="pt-3 sm:pt-0">
-                <button class="text-lg lg:text-xl font-semibold w-14 sm:w-16 lg:w-24 h-8 sm:h-10 bg-lime-300 rounded-lg hover:bg-lime-400">
-                    Blog
+    <section id="section-blur" class="sticky top-0">
+        <section class="bg-gray-200">
+            <nav class="flex itmes-center justify-between py-5 sm:py-8  px-5 md:px-0 pt-[10px] md:pt-[20px] md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] ">
+                <div class="pt-3 sm:pt-0">
+                    <a href="./blog.html">
+                        <button class="text-lg lg:text-xl font-semibold w-14 sm:w-16 lg:w-24 h-8 sm:h-10 bg-lime-300 rounded-lg hover:bg-lime-400">
+                            Blog
+                        </button>
+                    </a>
+                </div>
+
+                <div class="flex flex-col sm:flex-row itmes-center gap-x-5">
+                    <div class="mx-auto sm:mx-0">
+                        <img class="w-[2rem] h-[2rem] sm:w-[2.5rem] sm:h-[2.5rem] lg:w-[3rem] lg:h-[3rem]"  src="./assets/logo.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-lg sm:text-xl lg:text-2xl font-semibold pt-2 ">Donate Bangladesh</h2>
+                    </div>
+                </div>
+            
+
+                <div class="flex itmes-center lg:gap-x-5 gap-x-2 pt-3 sm:pt-0">
+                    <img class="hidden sm:block w-[2rem] h-[2rem] sm:w-[2.5rem] sm:h-[2.5rem] lg:w-[3rem] lg:h-[3rem]" src="./assets/coin.png" alt="">
+                    <div class="flex gap-x-2 sm:pt-2">
+                        <h2 class="text-lg lg:text-xl text-gray-600 font-medium" id="balance">00</h2>
+                        <h2 class="text-lg lg:text-xl text-gray-600 font-medium"> BDT</h2>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- buttons -->
+        <div class="flex items-center justify-center gap-x-5 my-12 pb-5">
+                <button id="donation-btn" class="text-lg lg:text-xl font-semibold w-24 lg:w-32 h-12  rounded-lg ">
+                    Donation
                 </button>
-            </div>
 
-            <div class="flex flex-col sm:flex-row itmes-center gap-x-5">
-                <div class="mx-auto sm:mx-0">
-                    <img class="w-[2rem] h-[2rem] sm:w-[2.5rem] sm:h-[2.5rem] lg:w-[3rem] lg:h-[3rem]"  src="./assets/logo.png" alt="">
-                </div>
-                <div>
-                    <h2 class="text-lg sm:text-xl lg:text-2xl font-semibold pt-2 ">Donate Bangladesh</h2>
-                </div>
-            </div>
-          
-
-            <div class="flex itmes-center lg:gap-x-5 gap-x-2 pt-3 sm:pt-0">
-                <img class="hidden sm:block w-[2rem] h-[2rem] sm:w-[2.5rem] sm:h-[2.5rem] lg:w-[3rem] lg:h-[3rem]" src="./assets/coin.png" alt="">
-                <div class="flex gap-x-2 sm:pt-2">
-                    <h2 class="text-lg lg:text-xl text-gray-600 font-medium" id="balance">00</h2>
-                    <h2 class="text-lg lg:text-xl text-gray-600 font-medium"> BDT</h2>
-                </div>
-            </div>
-         </nav>
+                <button id="history-btn" class="text-lg lg:text-xl font-semibold w-24 lg:w-32 h-12  rounded-lg ">
+                    History
+                </button>
+        </div>
     </section>
 
-    <!-- buttons -->
-    <div class="flex items-center justify-center gap-x-5 my-12">
-            <button id="donation-btn" class="text-lg lg:text-xl font-semibold w-24 lg:w-32 h-12  rounded-lg ">
-                Donation
-            </button>
-
-            <button id="history-btn" class="text-lg lg:text-xl font-semibold w-24 lg:w-32 h-12  rounded-lg ">
-                History
-            </button>
-    </div>
+    
 
     <!-- donation section -->
      <section id="donation-section" class="px-5 md:px-0  md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] min-h-screen ">
@@ -153,10 +158,10 @@
        
         <div id="footer-section" class="w-full bg-gray-200 mt-[5rem] pb-[2rem]">
             <!-- container mx-auto -->
-            <div class="mx-5 md:mx-0 pt-[1rem] md:pt-[2rem] md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center">
+            <div class="mx-5 pt-[1rem] md:pt-[2rem] md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center">
                 <div class="flex items-center gap-x-5 mt-[1rem] mb-[1rem]">
-                    <img class="w-[3rem] md:w-[4.5rem]" src="./assets/logo.png" alt="">
-                    <h1 class="text-[1.5rem] md:text-[2.5rem] font-bold">Donate Bangladesh</h1>
+                    <img class="w-[3rem] md:w-[4rem]" src="./assets/logo.png" alt="">
+                    <h1 class="text-[1.5rem] md:text-[2rem] font-bold">Donate Bangladesh</h1>
                 </div>
                 <div class="flex justify-center mt-[1rem] mb-[3rem]">
                     <p class="text-gray-600 text-lg mt-[1rem] text-center w-[85%] sm:w-[70%] line-clamp-8">
