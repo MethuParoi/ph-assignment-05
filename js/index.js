@@ -41,13 +41,19 @@ donateNowButtons.forEach(({ id, inputId }) => {
         noakhaliDonationAmount += donationAmount;
         document.getElementById("donation-noakhali").innerHTML =
           noakhaliDonationAmount;
+        addDonationElement(donationAmount, "Flood aid in Noakhali, Bangladesh");
       } else if (donatioId === "feni-donation-amnt") {
         feniDonationAmount += donationAmount;
         document.getElementById("donation-feni").innerHTML = feniDonationAmount;
+        addDonationElement(donationAmount, "Flood aid in Feni, Bangladesh");
       } else if (donatioId === "quota-donation-amnt") {
         quotaDonationAmount += donationAmount;
         document.getElementById("donation-quota").innerHTML =
           quotaDonationAmount;
+        addDonationElement(
+          donationAmount,
+          "aid of Injured in the Quota Movement, Bangladesh"
+        );
       }
       alert(`Donated ${donationAmount} taka`);
     }
@@ -58,6 +64,9 @@ donateNowButtons.forEach(({ id, inputId }) => {
 const historyButton = document.getElementById("history-btn");
 const donationButton = document.getElementById("donation-btn");
 const donationSection = document.getElementById("donation-section");
+const historySection = document.getElementById("history-section");
+const historyCard = document.getElementById("history-card");
+const footer = document.getElementById("footer-section");
 
 // Define active and inactive styles
 const activeStyles = {
@@ -96,11 +105,17 @@ historyButton.addEventListener("click", () => {
   applyStyles(historyButton, activeStyles);
   applyStyles(donationButton, inactiveStyles);
   applyStyles(donationSection, hidden);
+  applyStyles(historySection, visible);
+  applyStyles(historyCard, visible);
+  applyStyles(footer, hidden);
 });
 
 // Event listener for click
 donationButton.addEventListener("click", () => {
   applyStyles(donationButton, activeStyles);
   applyStyles(donationSection, visible);
+  applyStyles(historySection, hidden);
+  applyStyles(historyCard, hidden);
+  applyStyles(footer, visible);
   applyStyles(historyButton, inactiveStyles);
 });

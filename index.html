@@ -7,7 +7,7 @@
      <link rel="icon" href="./assets/logo.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body >
     <!-- navbar -->
     <section class="bg-gray-200">
          <nav class="flex itmes-center justify-between py-5 sm:py-8  px-5 md:px-0 pt-[10px] md:pt-[20px] md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] ">
@@ -143,6 +143,32 @@
          
         
      </section>
+
+     <!-- history section -->
+      <section id="history-section" class="px-5 md:px-0  md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] ">
+        <div class="hidden" id="history-card"></div>
+      </section>
+
+      <!-- footer section -->
+       
+        <div id="footer-section" class="w-full bg-gray-200 mt-[5rem] pb-[2rem]">
+            <!-- container mx-auto -->
+            <div class="mx-5 md:mx-0 pt-[1rem] md:pt-[2rem] md:container md:mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center">
+                <div class="flex items-center gap-x-5 mt-[1rem] mb-[1rem]">
+                    <img class="w-[3rem] md:w-[4.5rem]" src="./assets/logo.png" alt="">
+                    <h1 class="text-[1.5rem] md:text-[2.5rem] font-bold">Donate Bangladesh</h1>
+                </div>
+                <div class="flex justify-center mt-[1rem] mb-[3rem]">
+                    <p class="text-gray-600 text-lg mt-[1rem] text-center w-[85%] sm:w-[70%] line-clamp-8">
+                        Donate Bangladesh is a non-profit organization that aims to provide support and assistance to those in need. We work to address various social issues and provide relief to individuals and communities affected by disasters, poverty, and other challenges. Our mission is to make a positive impact on the lives of others and create a better world for all. Your donations help us continue our work and reach more people in need. Thank you for your support!
+                    </p>
+                </div>
+                <button class="flex justify-center items-center w-[85%] sm:w-[15rem] h-[3.5rem] rounded-[3rem] bg-lime-400 hover:bg-lime-500">
+                    <p class="text-[1.5rem] text-gray-800 font-semibold">Donate Now</p>
+                </button>
+            </div>
+        </div>
+    
     <!-- connecting js file with webpage -->
     <script src="./js/utilities.js"></script>
     <script src="./js/index.js"></script>
