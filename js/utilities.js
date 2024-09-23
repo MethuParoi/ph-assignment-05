@@ -1,3 +1,4 @@
+//common functions
 // get the value of the donation amount
 
 function getDonationAmount(id) {

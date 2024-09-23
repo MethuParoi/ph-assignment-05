@@ -7,6 +7,39 @@ let noakhaliDonationAmount = 0;
 let feniDonationAmount = 0;
 let quotaDonationAmount = 0;
 
+// Function to apply styles
+function applyStyles(element, styles) {
+  for (const property in styles) {
+    element.style[property] = styles[property];
+  }
+}
+
+// Define hidden and visible styles
+const hidden = {
+  display: "none",
+};
+
+const visible = {
+  display: "block",
+};
+
+//modal functionalities
+const modal = document.getElementById("modal");
+const overlay = document.getElementById("overlay");
+const modalButton = document.getElementById("modal-close-btn");
+
+modalButton.addEventListener("click", () => {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+function showModal(amount) {
+    document.getElementById("modal-amount").innerHTML = amount;
+    modal.style.display = "flex";
+    overlay.style.display = "block";
+    overlay.style.backdropFilter = "blur(10px)";
+}
+
 const donateNowButtons = [
   { id: "donate-now-btn-noakhali", inputId: "noakhali-donation-amnt" },
   { id: "donate-now-btn-feni", inputId: "feni-donation-amnt" },
@@ -56,7 +89,8 @@ donateNowButtons.forEach(({ id, inputId }) => {
           "aid of Injured in the Quota Movement, Bangladesh"
         );
       }
-      alert(`Donated ${donationAmount} taka`);
+      //   alert(`Donated ${donationAmount} taka`);
+      showModal(donationAmount);
     }
   });
 });
@@ -92,21 +126,7 @@ const inactiveStyles = {
   border: "2px solid #d1d5db",
 };
 
-// Define hidden and visible styles
-const hidden = {
-  display: "none",
-};
 
-const visible = {
-  display: "block",
-};
-
-// Function to apply styles
-function applyStyles(element, styles) {
-  for (const property in styles) {
-    element.style[property] = styles[property];
-  }
-}
 
 // Initially activate the donation button
 applyStyles(donationButton, activeStyles);
