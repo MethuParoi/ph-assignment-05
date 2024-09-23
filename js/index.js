@@ -1,5 +1,5 @@
 // Donation and history functionalities
-let balance = 10000;
+let balance = 100000;
 document.getElementById("balance").innerHTML = balance;
 
 //variables for donation amount
