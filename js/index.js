@@ -76,10 +76,12 @@ donateNowButtons.forEach(({ id, inputId }) => {
         document.getElementById("donation-noakhali").innerHTML =
           noakhaliDonationAmount;
         addDonationElement(donationAmount, "Flood aid in Noakhali, Bangladesh");
+        document.getElementById("noakhali-donation-amnt").value = "";
       } else if (donatioId === "feni-donation-amnt") {
         feniDonationAmount += donationAmount;
         document.getElementById("donation-feni").innerHTML = feniDonationAmount;
         addDonationElement(donationAmount, "Flood aid in Feni, Bangladesh");
+        document.getElementById("feni-donation-amnt").value = "";
       } else if (donatioId === "quota-donation-amnt") {
         quotaDonationAmount += donationAmount;
         document.getElementById("donation-quota").innerHTML =
@@ -88,8 +90,9 @@ donateNowButtons.forEach(({ id, inputId }) => {
           donationAmount,
           "aid of Injured in the Quota Movement, Bangladesh"
         );
+        document.getElementById("quota-donation-amnt").value = "";
       }
-      //   alert(`Donated ${donationAmount} taka`);
+      //show modal upon completion
       showModal(donationAmount);
     }
   });
